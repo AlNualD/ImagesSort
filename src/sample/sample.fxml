@@ -4,27 +4,18 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-            prefWidth="678.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="sample.Controller">
-   <ListView fx:id="picturesList" layoutX="-7.0" onKeyPressed="#onListClick" onMouseClicked="#onListClick"
-             prefHeight="400.0" prefWidth="285.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-             AnchorPane.topAnchor="0.0"/>
-   <ImageView fx:id="pictureView" fitHeight="261.0" fitWidth="349.0" layoutX="308.0" layoutY="14.0" pickOnBounds="true"
-              preserveRatio="true" AnchorPane.leftAnchor="308.0" AnchorPane.rightAnchor="21.0"
-              AnchorPane.topAnchor="14.0"/>
-   <Button fx:id="sortButton" layoutX="482.0" layoutY="311.0" mnemonicParsing="false" onAction="#sortButtonClicked"
-           text="Сортировать" AnchorPane.leftAnchor="482.0"/>
-   <ChoiceBox fx:id="orderChoiceBox" layoutX="293.0" layoutY="311.0" prefWidth="150.0" AnchorPane.leftAnchor="293.0"/>
-   <Button layoutX="482.0" layoutY="343.0" mnemonicParsing="false" onAction="#findSimilarPicturesButtonClicked"
-           text="Показать похожие"/>
-   <Button layoutX="291.0" layoutY="355.0" mnemonicParsing="false" onAction="#addButtonClicked" text="+"/>
-   <Label layoutX="292.0" layoutY="292.0" text="name:" AnchorPane.leftAnchor="292.0"/>
-   <Label layoutX="529.0" layoutY="292.0" text="Size:" AnchorPane.leftAnchor="529.0"/>
-   <Label fx:id="nameLabel" layoutX="325.0" layoutY="292.0" text="Label" AnchorPane.leftAnchor="325.0"/>
-   <Label fx:id="sizeLabel" layoutX="555.0" layoutY="292.0" text="Label" AnchorPane.leftAnchor="555.0"/>
-   <Button fx:id="returnDefaultButton" layoutX="566.0" layoutY="373.0" mnemonicParsing="false"
-           onAction="#resetButtonClicked" text="Сбросить" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="6.0"/>
-   <Slider fx:id="slider" layoutX="334.0" layoutY="352.0" showTickLabels="true" value="50.0"/>
-   <Label layoutX="339.0" layoutY="334.0" text="Степень сходства"/>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <ListView fx:id="picturesList" layoutX="-7.0" onKeyPressed="#onListClick" onMouseClicked="#onListClick" prefHeight="400.0" prefWidth="285.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   <ImageView fx:id="pictureView" fitHeight="261.0" fitWidth="349.0" layoutX="308.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="308.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="14.0" />
+   <Button fx:id="sortButton" layoutX="482.0" layoutY="311.0" mnemonicParsing="false" onAction="#sortButtonClicked" text="Сортировать" AnchorPane.leftAnchor="482.0" />
+   <ChoiceBox fx:id="orderChoiceBox" layoutX="293.0" layoutY="311.0" prefWidth="150.0" AnchorPane.leftAnchor="293.0" />
+   <Button layoutX="482.0" layoutY="343.0" mnemonicParsing="false" onAction="#findSimilarPicturesButtonClicked" text="Показать похожие" />
+   <Button layoutX="291.0" layoutY="355.0" mnemonicParsing="false" onAction="#addButtonClicked" text="+" />
+   <Label layoutX="292.0" layoutY="292.0" text="имя:" AnchorPane.leftAnchor="292.0" />
+   <Label layoutX="519.0" layoutY="292.0" text="Размер:" AnchorPane.leftAnchor="519.0" />
+   <Label fx:id="nameLabel" layoutX="317.0" layoutY="292.0" AnchorPane.leftAnchor="317.0" />
+   <Label fx:id="sizeLabel" layoutX="562.0" layoutY="292.0" AnchorPane.leftAnchor="562.0" />
+   <Button fx:id="returnDefaultButton" layoutX="566.0" layoutY="373.0" mnemonicParsing="false" onAction="#resetButtonClicked" text="Сбросить" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="6.0" />
+   <Slider fx:id="slider" layoutX="334.0" layoutY="352.0" showTickLabels="true" value="50.0" />
+   <Label layoutX="339.0" layoutY="334.0" text="Степень сходства" />
 </AnchorPane>
